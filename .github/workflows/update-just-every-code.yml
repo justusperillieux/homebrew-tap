@@ -32,10 +32,10 @@ jobs:
       - name: Validate formula
         if: steps.update.outputs.changed == 'true'
         run: |
-          brew style justusschock/tap/just-every-code
-          brew audit --strict --formula justusschock/tap/just-every-code
-          brew install justusschock/tap/just-every-code
-          brew test justusschock/tap/just-every-code
+          brew style justusperillieux/tap/just-every-code
+          brew audit --strict --formula justusperillieux/tap/just-every-code
+          brew install justusperillieux/tap/just-every-code
+          brew test justusperillieux/tap/just-every-code
 
       - name: Open and merge update pull request
         if: steps.update.outputs.changed == 'true'
@@ -74,7 +74,7 @@ jobs:
             --jq '
               .author.login == "app/github-actions" and
               .isCrossRepository == false and
-              .headRepositoryOwner.login == "justusschock" and
+              .headRepositoryOwner.login == "justusperillieux" and
               (.headRefName | test("^automation/just-every-code-v[0-9]+[.][0-9]+[.][0-9]+$")) and
               ([.files[].path] == ["Formula/just-every-code.rb"])
             ')"

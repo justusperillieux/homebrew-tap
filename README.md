@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Homebrew formulae maintained by [Justus Schock](https://github.com/justusschock).
+Homebrew formulae maintained by [Justus Schock](https://github.com/justusperillieux).
 
 ## Every Code
 
@@ -10,7 +10,7 @@ for the terminal.
 Install it with:
 
 ```sh
-brew install justusschock/tap/just-every-code
+brew install justusperillieux/tap/just-every-code
 ```
 
 Then launch it with:

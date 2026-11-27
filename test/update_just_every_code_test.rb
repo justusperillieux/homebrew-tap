@@ -122,7 +122,7 @@ class UpdateJustEveryCodeTest < Minitest::Test
     assert_match(/if: steps\.update\.outputs\.changed == 'true'/, workflow)
     assert_includes workflow, '.author.login == "app/github-actions"'
     assert_includes workflow, ".isCrossRepository == false"
-    assert_includes workflow, '.headRepositoryOwner.login == "justusschock"'
+    assert_includes workflow, '.headRepositoryOwner.login == "justusperillieux"'
     assert_includes workflow, '^automation/just-every-code-v[0-9]+[.][0-9]+[.][0-9]+$'
     assert_includes workflow, '[.files[].path] == ["Formula/just-every-code.rb"]'
     assert_includes workflow, 'gh pr merge "$pr_url" --squash'
